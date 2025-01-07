@@ -196,7 +196,7 @@ body{
         align-items: center;
         padding: 2rem 5rem;
         h2 {
-            text-align: center;
+            text-align: left;
             padding: 3rem 0;
         }
         button {
