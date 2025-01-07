@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home - Haircode</title>
+	<link rel="stylesheet" href="./css/menu.css">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/buttons.css">
+	<link rel="stylesheet" href="./css/titles.css">
+	<link rel="stylesheet" href="./css/accordion.css">
+	<link rel="stylesheet" href="./css/slider-articles.css">
+</head>
+<body>
+	<!-- menu - ignore -->
+	<header>
+		<div class="logo-container">
+		  <a href="#" tabindex="0"><img src="./images/logo-haircode.webp" alt="Logo" class="logo"></a>
+		</div>
+		<div class="menu-icon" id="menuIcon" role="button" tabindex="0" aria-label="Abrir menú" aria-expanded="false">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</div>
+	</header>
+
+	<nav id="mobileMenu" class="mobile-menu" aria-hidden="true">
+		<ul>
+		  <li><a href="#" tabindex="-1"><img src="./images/menu/articulos.png" alt=""></a></li>
+		  <li><a href="#" tabindex="-1"><img src="./images/menu/haircodes.png" alt=""></a></li>
+		  <li><a href="#" tabindex="-1"><img src="./images/menu/country-selector.png" alt=""></a></li>
+		  <li class="menu-boton">
+			<button class="button button-style-1" type="button" tabindex="-1" herf="https://latam.haircode.com/quiz" onclick="window.location.href='https://latam.haircode.com/quiz';">Tomar Quiz</button>
+		  </li>
+		</ul>
+	</nav>
+	
+
+	<!-- main -->
+	<main class="principal">
+		<div class="main-banner">
+			<h1 class="text-banner">Conoce tu cabello como nunca antes</h1>
+			<picture class="responsive-image">
+				<source media="(max-width: 768px)" srcset="./images/Home/banner-mobile.webp">
+				<source media="(min-width: 769px)" srcset="./images/Home/banner-desktop.webp">
+				<img src="./images/Home/banner-desktop.webp" alt="imagen principal - Conoce tu cabello como nunca antes" style="width: 100%; height: auto;">
+			</picture>
+			<button onclick="window.location.href='https://latam.haircode.com/quiz';" class="button button-style-1 button-banner" type="button" tabindex="0">Tomar Quiz</button>
+		</div>
+	</main>
+	
+	<section class="How-take-quiz">
+		<h2>¿Cómo funciona?</h2>
+		<div class="accordion">
+			<img src="./images/Home/decoration/decoration-1.png" alt="decoration" aria-hidden="true" class="decoration-1">
+			<img src="./images/Home/decoration/decoration-2.png" alt="decoration" aria-hidden="true" class="decoration-2">
+			<img src="./images/Home/decoration/decoration-3.png" alt="decoration" aria-hidden="true" class="decoration-3">
+			<img src="./images/Home/decoration/decoration-4.png" alt="decoration" aria-hidden="true" class="decoration-4">
+			<img src="./images/Home/decoration/decoration-5.png" alt="decoration" aria-hidden="true" class="decoration-5">
+            <div class="accordion-item item-1">
+                <div class="accordion-header" role="button" tabindex="0" aria-expanded="false" aria-controls="content1">
+                    <img src="./images/02_icons/01_paso_color-.png" alt="Imagen 1" class="step-image">
+					<div class="step-text">
+						<div class="content-title content-1-title">
+							Paso 1:
+						</div>
+						<div class="step-description">
+							<p>Toma nuestro quiz <span class="arrow-icon arrow-desk">&#9660;</span></p>
+						</div>
+					</div>
+                    <div class="arrow-icon arrow-mobile">&#9660;</div>
+                </div>
+                <div class="accordion-content" aria-hidden="true">
+                    <p><b>Info:</b> Descubre qué productos debe usar para tu tipo de cabello. ¡Son más de 1000 combinaciones posibles!</p>
+                </div>
+            </div>
+            <div class="accordion-item item-2">
+                <div class="accordion-header" role="button" tabindex="0" aria-expanded="false" aria-controls="content2">
+                    <img src="./images/02_icons/02_paso_color-.png" alt="Imagen 2" class="step-image">
+					<div class="step-text">
+						<div class="content-title content-2-title">
+							Paso 2:
+						</div>
+						<div class="step-description">
+							<p>Descubre tu Haircode <span class="arrow-icon arrow-desk">&#9660;</span></p>
+						</div>
+					</div>
+                    <div class="arrow-icon arrow-mobile">&#9660;</div>
+                </div>
+                <div class="accordion-content" aria-hidden="true">
+                    <p><b>Info:</b> Descubre qué productos debe usar para tu tipo de cabello. ¡Son más de 1000 combinaciones posibles!</p>
+                </div>
+            </div>
+            <div class="accordion-item item-3">
+                <div class="accordion-header" role="button" tabindex="0" aria-expanded="false" aria-controls="content3">
+                    <img src="./images/02_icons/03_paso_color-.png" alt="Imagen 3" class="step-image">
+					<div class="step-text">
+						<div class="content-title content-3-title">
+							Paso 3:
+						</div>
+						<div class="step-description">
+							<p>Recibe tu consejo de rutina <span class="arrow-icon arrow-desk">&#9660;</span></p>
+						</div>
+					</div>
+                    <div class="arrow-icon arrow-mobile">&#9660;</div>
+                </div>
+                <div class="accordion-content" aria-hidden="true">
+                    <p><b>Info:</b> Descubre qué productos debe usar para tu tipo de cabello. ¡Son más de 1000 combinaciones posibles!</p>
+                </div>
+            </div>
+        </div>
+
+		<button onclick="window.location.href='https://latam.haircode.com/quiz';" class="button button-style-1 button-accordion" type="button" tabindex="0">Tomar Quiz</button>
+	</section>
+
+	<section class="Articles">
+		<h2 class="title">Consejos populares</h2>
+
+		<div class="slider-container" role="region" aria-label="Slider de artículos destacados">
+			<div class="slider">
+				<div class="slide" style="background-image: url('./images/Home/article-1.webp');" tabindex="0" role="group" aria-label="Portada del artículo: [Article title]">
+					<h2 class="slide-title">Secado al aire vs Secado con secador</h2>
+					<a href="#" class="slide-link" role="link">Ver más &gt;</a>
+				</div>
+				<div class="slide" style="background-image: url('./images/Home/article-2.webp');" tabindex="0" role="group" aria-label="Portada del artículo: [Article title]">
+					<h2 class="slide-title">Article Title 2</h2>
+					<a href="#" class="slide-link" role="link">Ver más &gt;</a>
+				</div>
+				<div class="slide" style="background-image: url('./images/Home/article-1.webp');" tabindex="0" role="group" aria-label="Portada del artículo: [Article title]">
+					<h2 class="slide-title">Article Title 3</h2>
+					<a href="#" class="slide-link" role="link">Ver más &gt;</a>
+				</div>
+				<div class="slide" style="background-image: url('./images/Home/article-2.webp');" tabindex="0" role="group" aria-label="Portada del artículo: [Article title]">
+					<h2 class="slide-title">Article Title 2</h2>
+					<a href="#" class="slide-link" role="link">Ver más &gt;</a>
+				</div>
+				<div class="slide" style="background-image: url('./images/Home/article-1.webp');" tabindex="0" role="group" aria-label="Portada del artículo: [Article title]">
+					<h2 class="slide-title">Secado al aire vs Secado con secador</h2>
+					<a href="#" class="slide-link" role="link">Ver más &gt;</a>
+				</div>
+				<div class="slide" style="background-image: url('./images/Home/article-2.webp');" tabindex="0" role="group" aria-label="Portada del artículo: [Article title]">
+					<h2 class="slide-title">Article Title 2</h2>
+					<a href="#" class="slide-link" role="link">Ver más &gt;</a>
+				</div>
+			</div>
+			<button class="slider-button prev" aria-label="Anterior tarjeta" aria-controls="slider">&lt;</button>
+			<button class="slider-button next" aria-label="Siguiente tarjeta" aria-controls="slider">&gt;</button>
+		</div>
+		
+		<button onclick="window.location.href='./ALP%20-%20Haircode.html';" class="button button-style-2" type="button" tabindex="0">Ver Todos</button>
+	</section>
+
+	<section class="haircodes">
+		<div class="haircodes-text">
+			<div class="haircodes-title">
+				<h2>Descubre tu</h2>
+				<img src="./images/logo-haircode.webp" width="100%" alt="Logo haircode">
+			</div>
+			<p>
+				El cabello puede ser complicado.<br>
+				Por eso, lo desglosamos para ti paso a paso con tu único Código Capilar. ¡Mira algunos ejemplos a continuación!
+			</p>
+		</div>
+		<div class="special-slider-container">
+			<div class="special-slider">
+				<div class="special-slide">
+					<a href="#" class="special-slide-link">
+						<img src="./images/Home/haircode-1.webp" alt="Imagen 1">
+					</a>
+				</div>
+				<div class="special-slide">
+					<a href="#" class="special-slide-link">
+						<img src="./images/Home/haircode-2.webp" alt="Imagen 2">
+					</a>
+				</div>
+				<div class="special-slide">
+					<a href="#" class="special-slide-link">
+						<img src="./images/Home/haircode-3.webp" alt="Imagen 3">
+					</a>
+				</div>
+				<div class="special-slide">
+					<a href="#" class="special-slide-link">
+						<img src="./images/Home/haircode-2.webp" alt="Imagen 3">
+					</a>
+				</div>
+				<div class="special-slide">
+					<a href="#" class="special-slide-link">
+						<img src="./images/Home/haircode-1.webp" alt="Imagen 3">
+					</a>
+				</div>
+			</div>
+			<button class="special-slider-button prev" aria-label="Slide anterior">&lt;</button>
+			<button class="special-slider-button next" aria-label="Siguiente slide">&gt;</button>
+		</div>
+		
+		<button onclick="window.location.href='https://latam.haircode.com/quiz';" class="button button-style-1 button-accordion" type="button" tabindex="0">Tomar Quiz</button>
+	</section>
+	
+	<div class="footer-decoration"></div>
+	<!-- Footer - ignore -->
+	<footer>
+		<div class="logo">
+			<img class="logo-hc" src="./images/Home/logo-haircode-blanco.png" alt="Logo de Haircode" width="100%">
+			<img class="logo-pg" src="./images/Home/P&G_logo.png" alt="Logo de P&G" width="100%">
+		</div>
+		<div class="links-1">
+			<a href="https://termsandconditions.pg.com/es-es/" target="_blank">Acerca de nosotros</a>
+			<a href="https://privacypolicy.pg.com/es-LA/" target="_blank">Contáctanos</a>
+			<!-- <h3>Síguenos</h3>
+			<div class="links">
+				<a href="" target="_blank"><img src="./images/Home/fb.png" alt="Logo Facebook de Haircode"></a>
+				<a href="#" target="_blank"><img src="./images/Home/ig.png" alt="Logo Instagram de Haircode"></a>
+				<a href="#" target="_blank"><img src="./images/Home/tk.png" alt="Logo Tiktok de Haircode"></a>
+			</div> -->
+		</div>
+
+		<div class="links-2">
+			<a href="https://termsandconditions.pg.com/es-es/" target="_blank">Términos y condiciones</a>
+			<a href="https://privacypolicy.pg.com/es-LA/" target="_blank">Privacidad</a>
+			<a href="https://privacypolicy.pg.com/es-LA/#iba" target="_blank">Ad Choices</a>
+		</div>
+		<p>© 2024 Procter & Gamble</p>
+	</footer>
+</body>
+<script src="./js/menu.js"></script>
+<script src="./js/accordion.js"></script>
+<script src="./js/slider-articles.js"></script>
+</html>

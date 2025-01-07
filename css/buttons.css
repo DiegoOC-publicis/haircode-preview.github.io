@@ -1,0 +1,67 @@
+.button{
+  font-weight: bold;
+  color: #ffffff;
+  border:none;
+  border-radius: 40px;
+  padding: 15px 15px;
+  text-transform: uppercase;
+  width: 100%;
+
+  /* Sombra */
+  -webkit-box-shadow: 0px 10px 22px -1px rgba(0,0,0,0.38);
+  -moz-box-shadow: 0px 10px 22px -1px rgba(0,0,0,0.38);
+  box-shadow: 0px 10px 22px -1px rgba(0,0,0,0.38);
+}
+
+
+.button-style-1{
+  background: rgb(210,36,115);
+  background: linear-gradient(90deg, rgba(210,36,115,1) 0%, rgba(255,90,155,1) 100%);
+}
+.button-style-1:hover {
+  background: rgb(204, 38, 113);
+  color: #ffffff;
+}
+
+.button-style-2{
+  background: rgb(75,180,231);
+  font-size: 20px;
+  width: 80%;
+  background: linear-gradient(90deg, rgba(75,180,231,1) 0%, rgba(46,97,222,1) 100%);
+}
+.button-style-2:hover {
+  background: rgb(45, 126, 167);
+  color: #ffffff;
+}
+
+.button-banner{
+  width: 80%;
+    align-self: flex-end;
+    font-size: 20px;
+    position: absolute;
+    bottom: 80px;
+}
+
+.button-accordion{
+  width: 80%;
+  margin: 20px 40px;
+  font-size: 20px;
+}
+
+
+/*STYLES DESKTOP*/
+@media (min-width: 750px) {
+  .button-banner{
+    width: 100%;
+    max-width: 25vw;
+    font-size: 22px;
+    bottom: 10vw;
+    right: 19vw;
+  }
+
+  .button-accordion, .button-style-2{
+    width: 100%;
+    max-width: 30vw;
+  }
+  
+}

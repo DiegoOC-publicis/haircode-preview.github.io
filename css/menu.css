@@ -1,0 +1,118 @@
+/* Estilos previos */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #0f164c;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+  }
+  
+  .logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 130px;
+  }
+  
+  .menu-icon {
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-icon span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #0f164c; /* Color blanco para las barras */
+    border-radius: 4px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+ /* Transforma el ícono en una "X" */
+.menu-icon.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 7px);
+  }
+  
+  .menu-icon.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-icon.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .mobile-menu.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  
+  /* Estilos para el menú desplegable */
+  .mobile-menu {
+    position: fixed;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 3;
+  }
+  
+  .mobile-menu ul {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    max-width: 80%;
+  }
+  
+  .mobile-menu ul li {
+    padding: 15px 0px;
+    border-top: 1px solid #0f164c;
+  }
+  
+  .mobile-menu ul li a {
+    text-decoration: none;
+    color: #0f164c;
+    font-size: 24px;
+  }
+  
+  .mobile-menu.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+  .mobile-menu ul li img{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .menu-boton{
+    border-bottom: 0px !important;
+  }
+
+
+
+
+
+  
